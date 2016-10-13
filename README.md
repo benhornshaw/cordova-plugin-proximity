@@ -23,6 +23,7 @@ Methods
 
 
 window.plugin.proximity.getReading
+-----------------------------------
 
 This method get a single reading from the proximity sensor
 
