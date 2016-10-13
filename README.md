@@ -46,9 +46,8 @@ This method get a single reading from the proximity sensor
  - 'distance'
 
 
-
 window.plugin.proximity.watchReadings
---------------------------------------
+----------------------------------
 This helps get reapeated readings from the proximity sensor.
 
 <pre>
