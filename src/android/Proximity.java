@@ -53,7 +53,6 @@ public class Proximity extends CordovaPlugin implements SensorEventListener{
 
     public Proximity(){
     	this.distanceRead= 0;
-    	this.ox = 0;
     	this.timeStamp = 0;
     	this.watchContexts = new ArrayList<CallbackContext>();
     	this.setStatus(Proximity.STOPPED);
@@ -148,7 +147,7 @@ public class Proximity extends CordovaPlugin implements SensorEventListener{
 			return this.status;
 		}
 
-		// get accelorometer from sensor manager
+		// get proximity from sensor manager
 		@SuppressWarnings("deprecation")
 		List<Sensor> list = this.mSensorManager.getSensorList(Sensor.TYPE_PROXIMITY);
 
