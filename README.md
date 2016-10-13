@@ -48,6 +48,7 @@ This method get a single reading from the proximity sensor
 
 window.plugin.proximity.watchReadings
 ----------------------------------
+
 This helps get reapeated readings from the proximity sensor.
 
 <pre>
@@ -67,7 +68,7 @@ This helps get reapeated readings from the proximity sensor.
 
 
  `reading` object properties
- - 'distance'
+ - `distance`
 
 
 
