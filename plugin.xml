@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-accelometer" version="1.0.0">
+    <name>Proximity</name>
+    <author>DeshanKTD,AkilaWickey</author>
+
+    <description>This plugin allows you to get data from existing Proximity Sensor  in the device</description>
+    <license>MIT</license>
+    <keywords>Proximity Sensor,Distance</keywords>
+	 <repo>https://github.com/DeshanKTD/cordova-plugin-proximity.git</repo>
+   
+ 	<js-module src="www/proximity.js" name="Proximity">
+        <clobbers target="window.plugin.proximity" />
+    </js-module>
+
+	<!-- andorid -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Accelometer">
+                <param name="android-package" value="org.apache.cordova.proximity.Proximity"/>
+            </feature>
+        </config-file>
+         <source-file src="src/android/Proximity.java" target-dir="src/org/apache/cordova/proximity" />
+	</platform>
+</plugin>
