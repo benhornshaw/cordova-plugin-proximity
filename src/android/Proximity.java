@@ -232,7 +232,7 @@ public class Proximity extends CordovaPlugin implements SensorEventListener{
         // DO NOTHING
     }
 
-
+    
 
 
 

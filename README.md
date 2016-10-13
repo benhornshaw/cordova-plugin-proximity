@@ -42,8 +42,8 @@ This method get a single reading from the proximity sensor
   </code>
  </pre>
 
- `reading` object properties
- - 'distance'
+ `reading` object properties:
+ - `distance`
 
 
 window.plugin.proximity.watchReadings
