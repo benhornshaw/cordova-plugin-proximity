@@ -15,7 +15,7 @@ Proximity.prototype = {
 
 	},
 
-	watchReadings: function(onSuccessCallback, onErrorCallback){
+	watchReadings: function(onSuccessCallback, onErrorCallback, time){
 		//start timer to get distance
 		var proximity = this;
 		var id = utils.createUUID();
@@ -23,7 +23,7 @@ Proximity.prototype = {
 		if (cordova.platformId === 'android') {
 			timers[id] = window.setInterval(function() {
           		proximity.getReading(onSuccessCallback, onErrorCallback);
-      		}, 40); // every 40 ms (25 fps)
+      		}, time); // every 40 ms (25 fps)
 		}
 		else {
 			cordova.exec(onSuccessCallback,onErrorCallback, "Proximity","watchReadings",[]);
